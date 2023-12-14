@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project
+  disk="1"
+  disk-sure="true">
+
+  <partition type="DATA" filesystem="FAT32" size="*">
+      <copy name="dir5" path="dir1" />
+      <copy-from path="dir3" />
+      <directory name="dir6">
+         <copy name="dir7" path="dir3" />
+      </directory>
+  </partition>
+</project>

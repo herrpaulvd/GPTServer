@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project
+  img="disk.img"
+  img-size="1gb">
+
+  <partition type="ESP" filesystem="FAT32" size="*">
+    <directory name="efi">
+      <directory name="boot">
+        <copy name="bootx64.efi" path="main.efi" />
+      </directory>
+    </directory>
+  </partition>
+</project>
+
